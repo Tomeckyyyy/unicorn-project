@@ -1,0 +1,33 @@
+services:
+  django:
+    container_name: backend_django
+    build:
+      context: ./backend_django/
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=my_database
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=admin
+    volumes:
+      - db-data:/var/lib/mysql
+
+  react:
+    container_name: frontend_react
+    build:
+      context: ./frontend_react/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - django
+
+volumes:
+  db-data:
