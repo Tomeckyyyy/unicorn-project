@@ -10,7 +10,7 @@
 - Python Django
 - MariaDB
 
-[Historia Projektu](https://www.notion.so/Historia-Projektu-1aeb9ae9dd1380fba9eaf9b8dae7bb66?pvs=21)
+[Historia Projektu](https://sun-browser-c2f.notion.site/Historia-Projektu-1aeb9ae9dd1380fba9eaf9b8dae7bb66?pvs=4)
 
 Kupiliśmy komputer, który posłuży nam jako serwer. Zainstalowaliśmy Proxmoxa - platformę do wirtualizacji. Na tym serwerze utworzyliśmy maszynę wirtualną (VM) z systemem Ubuntu Server. Nasz plan obejmuje wykorzystanie następujących technologii:
 
